@@ -1,7 +1,7 @@
 name: sync-zdrka-yml
 on:
-  schedule:
-    - cron: '0 0-16/4 * * *'
+#  schedule:
+#    - cron: '0 0-16/4 * * *'
   workflow_dispatch:
 jobs:
   repo-sync:

@@ -1,7 +1,7 @@
 name: jd_jdfactory
 on:
   schedule:
-    - cron: '45 15 * * *'
+    - cron: '0 */5 * * *'
   workflow_dispatch:
 jobs:
   build:
