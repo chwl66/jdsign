@@ -1,8 +1,8 @@
-name: jd_pigPet
+name: jd_necklace
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '12 * * * *'
+    - cron: '45 15 * * *'
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,18 +25,17 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【养猪猪】'
+      - name: '运行 【东东工厂点点券】'
         run: |
-          node jd_pigPet.js
+          node jd_necklace.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
+          UN_SUBSCRIBES: ${{ secrets.UN_SUBSCRIBES }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
-          PETSHARECODES: ${{ secrets.PETSHARECODES }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
-          PET_NOTIFY_CONTROL: ${{ secrets.PET_NOTIFY_CONTROL }}
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}

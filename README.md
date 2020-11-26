@@ -15,7 +15,7 @@
 
 ### 解决方案如下:
 
-1. 重新建立一个[jd_scripts](https://github.com/lxk0301/jd_scripts)的[镜像库](https://github.com/zdrka/jd_scripts_mirror)
+1. 重新建立一个[jd_scripts](https://github.com/lxk0301/jd_scripts)的[镜像库](https://github.com/chwl66/jd_scripts)
 2. action直接拉取镜像库的代码.
 
 ## 最后......仓库测试中
