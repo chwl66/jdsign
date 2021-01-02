@@ -1,8 +1,8 @@
 name: jd_watch
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '10 9 * * *'
+#  schedule:
+#    - cron: '10 9 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
