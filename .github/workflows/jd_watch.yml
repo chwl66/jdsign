@@ -1,8 +1,8 @@
-name: jd_watch
+name: jd_bookshop
 on:
   workflow_dispatch:
-#  schedule:
-#    - cron: '10 9 * * *'
+  schedule:
+    - cron: '1 8,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,9 +25,9 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【京东看一看】'
+      - name: '运行 【口袋书店】'
         run: |
-          node jd_watch.js
+          node jd_bookshop.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
